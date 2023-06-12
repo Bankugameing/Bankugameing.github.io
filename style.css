@@ -13,7 +13,7 @@ a:hover {
     color: orange;
 }
 #a404:hover {
-    color: darkgoldenrod;
+    color: rgb(110, 81, 9);
 }
 .copyright {
     position: fixed;
