@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cool IFrame</title>
+		<link rel="stylesheet" href="style.css">
+		<style>
+			iframe {
+				background-color: #f1f1f1;
+				border: 2px solid #ccc;
+				padding: 5px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+				border-radius: 50px;
+			}
+		</style>
+    </head>
+    <body bgcolor="orange">
+		<center id="center">
+			<div class="copyright">
+				Copyright RishB 2023<br/>
+				All Rights Reserved
+			</div>
+		</center>
+        <script>
+            let page = prompt("Please enter the wikipedia page you would like to go to.")
+			
+			let iframe = document.createElement("iframe")
+			iframe.height = 500
+			iframe.width = 1000
+			
+			iframe.src = "https://wikipedia.org/wiki/"+page
+			
+			document.getElementById("center").appendChild(iframe)
+        </script>
+    </body>
+</html>

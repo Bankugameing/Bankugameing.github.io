@@ -1,0 +1,41 @@
+* {
+    color: chartreuse;
+    font-family: 'Courier New', Courier, monospace;
+  }
+footnote {
+    font-size: 10px;
+    font-style: italic;
+}
+a:hover {
+    color: green;
+}
+#a404 {
+    color: orange;
+}
+#a404:hover {
+    color: darkgoldenrod;
+}
+.copyright {
+    position: fixed;
+	bottom: 3px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	color: darkcyan;
+	background-color: aqua;
+	border: 2px solid;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#NotFound {
+    top: 200px;
+    width: fit-content;
+    left: 285px;
+    position: absolute;
+    text-align: center;
+    color: orange;
+    background-color: yellow;
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

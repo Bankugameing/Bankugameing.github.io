@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maintainance</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body bgcolor="#7a2c05">
+        <center id="center">
+            <div class="copyright">Copyright RishB 2023<br/>All Rights Reserved</div>
+        </center>
+        <script>
+            const queryString = window.location.search
+            const pageParam = new URLSearchParams(queryString)
+            let text = document.createElement("h1")
+            text.innerHTML = "Hello, The "+pageParam.get("page")+" page is still under MAINTAIN EENCCCCCCCEEEEEEEEEE. Please enjoy some chicken nuggies and soda while you wait."
+            document.getElementById("center").appendChild(text)
+        </script>
+    </body>
+</html>
