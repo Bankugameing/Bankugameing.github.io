@@ -39,3 +39,15 @@ a:hover {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+#CopyrightBlank {
+    position: fixed;
+	bottom: 3px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	color: gray;
+	background-color: whitesmoke;
+	border: 2px solid;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
