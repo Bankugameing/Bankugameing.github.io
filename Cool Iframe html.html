@@ -20,16 +20,25 @@
 				All Rights Reserved
 			</div>
 		</center>
+		<center>
+			<input type="button" value="Reset Iframe" onclick="newIframe(document.getElementById('OldFrame'), document.createElement('iframe'), prompt('Please enter the wikipedia page you would like to go to.'))" id="ResetIFrameBtn">
+		</center>
         <script>
-            let page = prompt("Please enter the wikipedia page you would like to go to.")
-			
-			let iframe = document.createElement("iframe")
-			iframe.height = 500
-			iframe.width = 1000
-			
-			iframe.src = "https://wikipedia.org/wiki/"+page
-			
-			document.getElementById("center").appendChild(iframe)
+			function newIframe(oldiframe, iframe, page) {
+				if (oldiframe != null) {
+					oldiframe.remove()
+				}
+
+				iframe.height = 500
+				iframe.width = 1000
+
+				iframe.src = "https://wikipedia.org/wiki/"+page
+				iframe.id = "OldFrame"
+
+				document.getElementById("center").appendChild(iframe)
+			}
+
+			newIframe(null, document.createElement('iframe'), prompt('Please enter the wikipedia page you would like to go to.'))
         </script>
     </body>
 </html>
